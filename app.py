@@ -32,9 +32,8 @@ def transform_text(text):
 
     return " ".join(y)
 
-tfidf=pkl.load(open(r'C:\Users\VINEET KUMAR SINGH\OneDrive\Desktop\Projects\Email_spasm\vectorizer.pkl','rb'))
-
-model=pkl.load(open(r'C:\Users\VINEET KUMAR SINGH\OneDrive\Desktop\Projects\Email_spasm\model.pkl','rb'))
+tfidf=pkl.load(open("vectorizer.pkl","rb"))
+model=pkl.load(open("model.pkl","rb"))
 
 st.title("Email/Spam Classifier")
 
